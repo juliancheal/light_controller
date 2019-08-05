@@ -1,0 +1,10 @@
+[Unit]
+Description=Hall/Landing Light
+
+[Service]
+ExecStart=/usr/bin/python3 -u light_switch.py
+WorkingDirectory=/home/pirate
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
